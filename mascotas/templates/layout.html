@@ -1,0 +1,31 @@
+<div class="grid">
+  <form>
+    <div>
+      <label for="name"><span data-tooltip="No que empiece por números">Nombre *</span></label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="race">Raza</label>
+      <input type="text" id="race" name="race">
+    </div>
+    <div>
+      <label for="weight"><span data-tooltip="Sólo números">Peso *</span></label>
+      <input pattern="[0-9]+(.[0-9]+)?" title="Sólo números" type="text" id="weight" name="weight" required>
+    </div>
+    <fieldset>
+      <legend>Tipo</legend>
+      <label>
+        <input type="radio" name="tipo" value="mascota" checked>
+        Mascota
+      </label>
+      <label>
+        <input type="radio" name="tipo" value="perro">
+        Perro
+      </label>
+    </fieldset>
+    <div class="card">
+      <button id="counter">Click</button>
+    </div>
+  </form>
+  <div class="render"></div>
+</div>

@@ -1,13 +1,24 @@
-import layout from './templates/layout.html?raw'
+import { v4 as getId } from 'uuid'
+import { perroToModel, mascotaToModel } from './mascotas/mappers/mascotaToModel'
+import { renderMascotas } from './mascotas/presentations/render-mascotas'
+import layout from './mascotas/templates/layout.html?raw'
 
 function handleForm (formElement) {
-  let data = {}
   formElement.addEventListener('submit', e => {
     e.preventDefault()
-    data = {
-      test: formElement.test.value
+
+    const data = {
+      name: formElement.name.value.trim(),
+      race: formElement.race.value.trim(),
+      weight: Number(formElement.weight.value),
+      id: getId()
     }
-    console.log(data)
+
+    if (formElement.tipo.value === 'mascota') {
+      renderMascotas(mascotaToModel(data), formElement.nextElementSibling)
+    } else {
+      renderMascotas(perroToModel(data), formElement.nextElementSibling)
+    }
   })
 }
 

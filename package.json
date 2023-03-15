@@ -15,7 +15,8 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
-    "@picocss/pico": "^1.5.7"
+    "@picocss/pico": "^1.5.7",
+    "uuid": "^9.0.0"
   },
   "eslintConfig": {
     "extends": "standard"
