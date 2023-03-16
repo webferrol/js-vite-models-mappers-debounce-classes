@@ -1,0 +1,76 @@
+{
+    "Search": [
+        {
+            "Title": "Beyond the Mat",
+            "Year": "1999",
+            "imdbID": "tt0218043",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5NDUzODkyOF5BMl5BanBnXkFtZTcwNjY3OTIyMQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Pat & Mat",
+            "Year": "1976–2018",
+            "imdbID": "tt0841929",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTI1NTljM2EtYzQwNS00M2Y2LTlmOWQtZGZhNWFmYzA4MDM5XkEyXkFqcGdeQXVyMjIxMzMyMQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Mat Kilau",
+            "Year": "2022",
+            "imdbID": "tt11347146",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZDYwNjNhNmQtNzZlZC00YzVmLThhMzItNmJiYWJjMGFjODQwXkEyXkFqcGdeQXVyMjkyOTg5NjI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Going to the Mat",
+            "Year": "2004",
+            "imdbID": "tt0399104",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYWZlOTYyN2EtNjljNC00YmQzLTgyNDAtMjdiODQ2NmZmZWQ0XkEyXkFqcGdeQXVyMTIwMjY0NjQz._V1_SX300.jpg"
+        },
+        {
+            "Title": "Salim Langde Pe Mat Ro",
+            "Year": "1989",
+            "imdbID": "tt0241914",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMWQ2MzM3OTItMjQ4MC00MzA1LTgzYjQtYjk5YjFmOTE0N2MyXkEyXkFqcGdeQXVyMjUxMTY3ODM@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Chan mat",
+            "Year": "2008",
+            "imdbID": "tt1303846",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjEyOTc3MTY2M15BMl5BanBnXkFtZTgwNDc4MjA2MDE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Pat & Mat",
+            "Year": "2014",
+            "imdbID": "tt5320892",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTU2MWY2M2UtYmNiYy00YTM2LWI2YzItZDRmNGYzNTM1ZjI1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjIxMzMyMQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Mat the Cat",
+            "Year": "2005",
+            "imdbID": "tt0445689",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZDQzMGVjZTEtNWY4Ni00OTkzLWE2ODYtYWZhNTdiNjBmZGRlXkEyXkFqcGdeQXVyNjM3NTIzNjE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Dil Pe Mat Le Yaar!!",
+            "Year": "2000",
+            "imdbID": "tt0255120",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZmY1Y2YzZGEtNzRjZi00ZGI0LTkzZGYtNmI5ZTNkY2Q3ZjhiXkEyXkFqcGdeQXVyOTA0NDk0NzM@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Sajan Re Jhoot Mat Bolo",
+            "Year": "2009–2012",
+            "imdbID": "tt2191327",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNzliNjY3N2YtMTU4NC00ZDRjLWExYjEtYWU2ZjM2ZTBmN2QwXkEyXkFqcGdeQXVyNDc0MDgzNTE@._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "185",
+    "Response": "True"
+}
