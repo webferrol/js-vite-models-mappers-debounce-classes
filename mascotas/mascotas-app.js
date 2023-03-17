@@ -1,7 +1,7 @@
 import { v4 as getId } from 'uuid'
-import { perroToModel, mascotaToModel } from './mascotas/mappers/mascotaToModel'
-import { renderMascotas } from './mascotas/presentations/render-mascotas'
-import layout from './mascotas/templates/layout.html?raw'
+import { perroToModel, mascotaToModel } from './mappers/mascotaToModel'
+import { renderMascotas } from './presentations/render-mascotas'
+import layout from './templates/layout.html?raw'
 
 function handleForm (formElement) {
   formElement.addEventListener('submit', e => {
@@ -22,7 +22,7 @@ function handleForm (formElement) {
   })
 }
 
-export function app (root) {
+export function MascotasApp (root) {
   if (!root) throw new Error('Element not found')
   root.innerHTML = layout
   handleForm(root.querySelector('form'))
