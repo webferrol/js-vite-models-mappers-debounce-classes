@@ -16,8 +16,10 @@ export function loading (isLoading = true) {
   if (isLoading) {
     progress.classList.remove('oculto')
     document.querySelector('button').setAttribute('aria-busy', true)
+    document.querySelector('button').setAttribute('disabled', true)
   } else {
     progress.classList.add('oculto')
     document.querySelector('button').removeAttribute('aria-busy')
+    document.querySelector('button').removeAttribute('disabled')
   }
 }
