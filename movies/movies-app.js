@@ -1,6 +1,14 @@
 
+import debounce from 'just-debounce-it'
 import template from './templates/main-template.html?raw'
 import { searchFor } from './use-case/search-for'
+
+/**
+ * Función debounce para evitar el efecto rebote de mostrar resultados al mismo tiempo que se escribe
+ */
+const handleSearch = debounce(e => {
+  searchFor(e.target.parentElement) // e.target.parentElement es el HTMLFormElement
+}, 300)
 
 /**
  * Gestión del formulario de búsqueda de películas
@@ -11,6 +19,8 @@ function handleForm (formElement) {
     e.preventDefault()
     searchFor(e.target)
   })
+
+  formElement.addEventListener('input', handleSearch)
 }
 
 /**
