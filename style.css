@@ -1,8 +1,18 @@
 .my-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: .5em;
+}
+
+.my-grid img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .btn {
   width: 9rem;
+}
+
+.oculto {
+  display: none;
 }

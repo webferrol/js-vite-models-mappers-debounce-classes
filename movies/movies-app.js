@@ -1,13 +1,13 @@
 
 import debounce from 'just-debounce-it'
 import template from './templates/main-template.html?raw'
-import { searchFor } from './use-case/search-for'
+import { searchFor } from './use-cases/search-for'
 
 /**
  * Función debounce para evitar el efecto rebote de mostrar resultados al mismo tiempo que se escribe
  */
 const handleSearch = debounce(e => {
-  searchFor(e.target.parentElement) // e.target.parentElement es el HTMLFormElement
+  searchFor(e.target.closest('form')) // e.target.parentElement es el HTMLFormElement
 }, 300)
 
 /**
