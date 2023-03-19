@@ -6,10 +6,12 @@
 export async function getMovies (url) {
   const response = await fetch(url)
   const data = await response.json()
-  const { Response, Error, Search } = data
+  const { Response, Error, Search, totalResults } = data
   return {
-    Response,
     MovieError: Error,
-    Search
+    Response,
+    Search,
+    totalResults,
+    pages: totalResults ? Math.ceil(totalResults / 10) : 1
   }
 }

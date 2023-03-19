@@ -7,7 +7,7 @@ import { searchFor } from './use-cases/search-for'
  * Función debounce para evitar el efecto rebote de mostrar resultados al mismo tiempo que se escribe
  */
 const handleSearch = debounce(e => {
-  searchFor(e.target.closest('form')) // e.target.parentElement es el HTMLFormElement
+  searchFor(e.target.closest('form'), false) // e.target.parentElement es el HTMLFormElement
 }, 300)
 
 /**
@@ -17,10 +17,21 @@ const handleSearch = debounce(e => {
 function handleForm (formElement) {
   formElement.addEventListener('submit', e => {
     e.preventDefault()
-    searchFor(e.target)
+    searchFor(e.target, false)
   })
 
   formElement.addEventListener('input', handleSearch)
+}
+
+/**
+ * Páginación básica
+ * @param {HTMLFormElement} formElement 
+ */
+function handlePage (formElement) {
+  formElement.querySelector('#next').addEventListener('click', e => {
+    e.preventDefault()
+    searchFor(formElement, true)
+  })
 }
 
 /**
@@ -30,4 +41,5 @@ function handleForm (formElement) {
 export function moviesApp (entryPointElement) {
   entryPointElement.innerHTML = template
   handleForm(entryPointElement.querySelector('form'))
+  handlePage(entryPointElement.querySelector('form'))
 }
