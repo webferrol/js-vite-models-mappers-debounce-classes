@@ -19,13 +19,12 @@ function handleForm (formElement) {
     e.preventDefault()
     searchFor(e.target, false)
   })
-
   formElement.addEventListener('input', handleSearch)
 }
 
 /**
  * Páginación básica
- * @param {HTMLFormElement} formElement 
+ * @param {HTMLFormElement} formElement
  */
 function handlePage (formElement) {
   formElement.querySelector('#next').addEventListener('click', e => {
